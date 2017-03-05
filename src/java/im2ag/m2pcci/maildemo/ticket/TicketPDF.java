@@ -37,7 +37,6 @@ public class TicketPDF {
     private static int nbTickets = 0;
 
     public static BufferedImage createQRC(String codeText, int size) throws WriterException {
-
         String fileType = "png";
         Hashtable<EncodeHintType, ErrorCorrectionLevel> hintMap = new Hashtable<EncodeHintType, ErrorCorrectionLevel>();
         hintMap.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
@@ -163,8 +162,10 @@ public class TicketPDF {
                 //---------------------------------------------------------------------------
                 // le texte à encoder avec le QR Code
                 String data = "Ticket N°" + String.format("%06d", noTicket);
+                
+                
 //                // attention ce texte devant être passé en paramètre d'une requête HTTP GET
-//                // il doit être "url encodé" (pour gérer correctement les epsaces et caractères non ASCII).
+//                // il doit être "url encodé" (pour gérer correctement les espaces et caractères non ASCII).
 //                data = URLEncoder.encode(data, "UTF-8");
 //                // appel du service web pour obtenir l'image du QR code
 //                BufferedImage awtImage = ImageIO.read(new URL(
