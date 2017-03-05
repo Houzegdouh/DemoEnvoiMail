@@ -35,14 +35,14 @@
                 nom utilisateur mail login agalan UGA
             -->
             <param-name>mail_user_name</param-name>
-            <param-value>xxxxx</param-value>
+            <param-value>genoudph</param-value>
         </init-param>
         <init-param>
             <!--    
                 mot de passe utilisateur mail  
             -->
             <param-name>mail_user_passwd</param-name>
-            <param-value>xxxxx</param-value>
+            <param-value>MatEloAud3</param-value>
         </init-param>
         <init-param>
             <!--    
